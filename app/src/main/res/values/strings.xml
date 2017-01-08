@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Beer Finder</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="davidMalone">Cheap Beer</string>
+    <string name="AllBeers">All Beers</string>
+    <string name="BeerDetailsLbl">Full Beer Details</string>
+    <string name="BeerRatingLbl">Star Rating</string>
+    <string name="barName">Bar:</string>
+    <string name="nameOfBeer">Beer:</string>
+    <string name="BeerPriceLbl">Price:</string>
+    <string name="updateABeerLbl">Update a Beer</string>
+    <string name="updateBeerBtnLbl">Update Beer</string>
+    <string name="updateABeerl">Update a Beer</string>
+    <string name="Help">Help a sesh head</string>
+    <string name="saveBeerBtn">Save Beer</string>
+    <string name="addABeerLbl">Beer Check In</string>
+    <string name="country_prompt">Choose a County</string>
+    <string name="information">Information on Beer Finder</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">AIzaSyCinjxwYl0Lv8TTqM6w8iL_w39f8G5x2Rw</string>
+    <string name="title_activity_maps1">Map</string>
+    <string name="action_search">Search</string>
+
+    <string name="title_activity_my_map_fragment">Map</string>
+    <string name="title_activity_gmap_fragment">Map</string>
+    <string name="title_activity_map_fragment">Map</string>
+</resources>

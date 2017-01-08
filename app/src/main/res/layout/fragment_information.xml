@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dm.pivofinder.fragments.InformationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_launcher"
+            android:id="@+id/imageView2"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="146dp" />
+
+        <TextView
+            android:text="This Beer Finder applicaion was made for Agile Development module by: \n Name: David Malone \n Student Number: 20050617 \n Email: davidanthonymalone@gmail.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_marginTop="53dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="normal|bold"
+            android:textAlignment="textStart" />
+
+        <TextView
+            android:text="About Us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:id="@+id/textView4"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/imageView2" />
+
+        <TextView
+            android:text="Here at Beer Finder we think Drinks should be spaced out over the week, not consumed in one sitting. Drinking more than the safe levels may cause harm."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:id="@+id/textView5"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Drink Responsibly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            tools:text="Drink Responsibly"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>

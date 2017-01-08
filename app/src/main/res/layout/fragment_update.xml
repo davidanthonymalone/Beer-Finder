@@ -1,0 +1,133 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dm.pivofinder.fragments.UpdateFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    tools:ignore="UselessParent" >
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/updatebeerBtn"
+            style="@android:style/Holo.Light.ButtonBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_save_beer"
+            android:text="@string/updateBeerBtnLbl"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="38dp"
+            android:onClick="update"/>
+
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/updatebeerBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="116dp"
+            android:id="@+id/locationContentView" />
+
+        <EditText
+            android:id="@+id/priceEditText"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_alignBaseline="@+id/priceTextView"
+            android:layout_alignBottom="@+id/priceTextView"
+            android:layout_alignStart="@+id/beerNameEditText" />
+
+        <TextView
+            android:id="@+id/barz1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/barName"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BeerPriceLbl"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp"
+            android:layout_below="@+id/beerNameEditText"
+            android:layout_alignStart="@+id/nameTextView" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:gravity="top"
+            android:text="@string/nameOfBeer"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@+id/beerNameEditText"
+            android:layout_alignBottom="@+id/beerNameEditText"
+            android:layout_alignStart="@+id/barz1TextView" />
+
+        <EditText
+            android:id="@+id/beerNameEditText"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textShortMessage"
+            android:layout_below="@+id/barz1TextView"
+            android:layout_toEndOf="@+id/nameTextView"
+            android:layout_marginStart="66dp">
+
+        </EditText>
+
+        <fragment
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            android:id="@+id/barEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textShortMessage"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/nameTextView" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

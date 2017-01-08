@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    tools:context="dm.pivofinder.fragments.BeerFragment"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="486dp"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/searchForBeer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textCapWords"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_search"
+            android:background="@drawable/bg_edittext"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:hint="Search for Beers">
+        </EditText>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ListView
+            android:id="@+id/beerList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:paddingBottom="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/searchForBeer">
+        </ListView>
+
+    </RelativeLayout>
+
+</FrameLayout>
